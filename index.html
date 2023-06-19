@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemple de requete HTTP avec JavaScript</title>
+</head>
+<body>
+
+<div id="response"></div>
+
+<script>
+  // Effectuer une requête HTTP GET
+  fetch('https://postman-echo.com/get')
+    .then(response => response.json())
+    .then(data => {
+      // Mettre à jour le contenu de l'élément "response"
+      document.getElementById("response").textContent = JSON.stringify(data);
+    })
+    .catch(error => console.error('Erreur:', error));
+</script>
+
+</body>
+</html>
