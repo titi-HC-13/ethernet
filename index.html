@@ -4,19 +4,12 @@
   <title>Exemple de requete HTTP avec JavaScript</title>
 </head>
 <body>
+<script src="myscripts.js"></script>
 
 <div id="response"></div>
 
-<script>
-  // Effectuer une requête HTTP GET
-  fetch('https://postman-echo.com/get')
-    .then(response => response.json())
-    .then(data => {
-      // Mettre à jour le contenu de l'élément "response"
-      document.getElementById("response").textContent = JSON.stringify(data);
-    })
-    .catch(error => console.error('Erreur:', error));
-</script>
+<button id="button" onclick="windows.open('https://google.com/', )"><h3>"Google"</h3></button>
+<button id="resquest" onclick="resquest()">"run resquest"</button>
 
 </body>
 </html>
