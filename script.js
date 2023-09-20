@@ -1,6 +1,6 @@
-function resquest(){
+function resquest(url){
     // Effectuer une requête HTTP GET
-    fetch('https://google.com')
+    fetch(url)
     .then(response => response.json())
     .then(data => {
     // Mettre à jour le contenu de l'élément "response"
