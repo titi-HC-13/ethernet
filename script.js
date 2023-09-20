@@ -1,6 +1,6 @@
 function resquest(){
     // Effectuer une requête HTTP GET
-    fetch('https://postman-echo.com/get')
+    fetch('https://api.echo.lu/v1/')
     .then(response => response.json())
     .then(data => {
     // Mettre à jour le contenu de l'élément "response"
